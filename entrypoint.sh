@@ -77,7 +77,7 @@ echo ""
 echo "Open this URL in your browser and log in (ctrl + click):"
 echo ""
 echo ""
-xdg-open $URL
+echo  $URL
 sleep 1
 wait_file "saml-response.txt" 60 || {
   echo "SAML Authentication timed out"
